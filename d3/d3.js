@@ -2597,8 +2597,9 @@ d3.scale.category20c = function() {
 };
 
 var d3_category10 = [
-  "#1f77b4", "#ff7f0e", "#2ca02c", "#d62728", "#9467bd",
-  "#8c564b", "#e377c2", "#7f7f7f", "#bcbd22", "#17becf"
+  "#11b89c", "#1181b8", "#ebcb2a", "#1f77b4", "#ff7f0e", "#2ca02c", 
+  "#d62728", "#9467bd", "#8c564b", "#e377c2", "#7f7f7f","#1f77b4", 
+  "#549d8f", "#549d6b", "#17becf", "#bcbd22", "#11b89c", "#1181b8", "#ebcb2a"
 ];
 
 var d3_category20 = [

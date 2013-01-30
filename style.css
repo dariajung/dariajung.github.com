@@ -1,5 +1,5 @@
 body {
-    background: url(bg.jpg);
+    background: url("bg.png");
     overflow: hidden;
     margin: 25px;
     font-size: 14px;

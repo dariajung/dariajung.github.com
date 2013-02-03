@@ -32,7 +32,8 @@ h2 {
     margin: 15px;
     line-height: 30px;
     font-size: 35px;
-    color: #369;
+    /*color: #369;*/
+    color: #088da5;
 }
 
 #header.inverted, #footer.inverted {
@@ -88,7 +89,7 @@ line {
 }
 
 a:link, a:visited {
-    color: #1181B8;
+    color: #088da5;
     text-decoration: none;
 }
 

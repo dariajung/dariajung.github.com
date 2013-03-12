@@ -6,6 +6,9 @@ body {
     /*font-family: Century Gothic, sans-serif;*/
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
     font-weight: 300;
+    max-width: 75%;
+    margin-left: 3%;
+    min-height: 101%;
 }
 
 #chart, #header, #footer {
@@ -98,7 +101,7 @@ a:hover {
 }
 
 .hint {
-    position: absolute;
+    position: relative;
     right: 0;
     width: 1280px;
     font-size: 12px;
@@ -107,8 +110,8 @@ a:hover {
 
 nav {
     position: absolute;
-    top: 35px;
-    left: 350px;
+    top: 5%;
+    margin-left: 26%;
     width: auto;
 }
 

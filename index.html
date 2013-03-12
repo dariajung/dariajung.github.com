@@ -1,71 +1,72 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Daria Jung</title>
-        <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-        <script type="text/javascript" src="d3/d3.js"></script>
-        <script type="text/javascript" src="d3/d3.geom.js"></script>
-        <script type="text/javascript" src="d3/d3.layout.js"></script>
-        <link type="text/css" rel="stylesheet" href="style.css"/>
-        <style type="text/css">
+<head>
+    <title>Daria Jung</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <script type="text/javascript" src="d3/d3.js"></script>
+    <script type="text/javascript" src="d3/d3.geom.js"></script>
+    <script type="text/javascript" src="d3/d3.layout.js"></script>
+    <link type="text/css" rel="stylesheet" href="style.css"/>
+    <style type="text/css">
 
-            circle {
-                stroke: #000;
-                stroke-opacity: .5;
-            }
+    circle {
+        stroke: #000;
+        stroke-opacity: .5;
+    }
 
-        </style>
-    </head>
+    </style>
+</head>
 
-    <body>
-        <header>
-        <h1><a href="./">Daria Jung</a></h1>
-        </header>
-        <nav>
-        <ul>
-            <li>
+<header>
+    <h1><a href="./">Daria Jung</a></h1>
+</header>
+<nav>
+    <ul>
+        <li>
             <a href="./about.html">About</a>
-            </li>
-            <li>
+        </li>
+        <li>
             <a href="projects.html">Projects</a>
-            </li>
-            <li>
+        </li>
+        <li>
             <a target="_blank" href="http://www.linkedin.com/pub/daria-jung/58/4ab/28b">LinkedIn</a></li>
             <li>
-            <a target="_blank" href="https://twitter.com/djj2115">Twitter</a></li>
+                <a target="_blank" href="https://twitter.com/djj2115">Twitter</a></li>
             </li>
             <li>
-            <a target="_blank" href="https://github.com/dariajung/">Github</a>
-            </li>
-             <li>
-            <a target="_blank" href="https://piki.fm/djjung/">Piki.fm</a>
+                <a target="_blank" href="https://github.com/dariajung/">Github</a>
             </li>
             <li>
-            <a target="_blank" href="https://www.hackerleague.org/users/dariajung">Hacker League</a>
+                <a target="_blank" href="https://piki.fm/djjung/">Piki.fm</a>
             </li>
             <li>
-            <a href="mailto:djj2115@columbia.edu">Email</a> 
+                <a target="_blank" href="https://www.hackerleague.org/users/dariajung">Hacker League</a>
+            </li>
+            <li>
+                <a href="mailto:djj2115@columbia.edu">Email</a> 
             </li>
         </ul>
-        </nav>
+    </nav>
+    <body>
         <div id="body">
-            <div id="footer">
-                Collision Detection
-                <div class="hint">move the mouse to repel nodes. animation borrowed from <a href="http://d3js.org">d3js.org</a></div>
-            </div>
+        <div id="footer">
+            Collision Detection
+            <div class="hint">move the mouse to repel nodes. animation borrowed from <a href="http://d3js.org">d3js.org</a></div>
         </div>
-        <script type="text/javascript">
+    </div>
+    </body>
+    <script type="text/javascript">
 
-            var w = 1280,
-            h = 600;
+    var w = 1280,
+    h = 600;
 
-var nodes = d3.range(250).map(function() { return {radius: Math.random() * 12 + 4}; }),
+    var nodes = d3.range(250).map(function() { return {radius: Math.random() * 12 + 4}; }),
     color = d3.scale.category10();
 
     var force = d3.layout.force()
-.gravity(0.05)
+    .gravity(0.05)
     .charge(function(d, i) { return i ? 0 : -2000; })
-.nodes(nodes)
+    .nodes(nodes)
     .size([w, h]);
 
     var root = nodes[0];
@@ -79,59 +80,58 @@ var nodes = d3.range(250).map(function() { return {radius: Math.random() * 12 + 
     .attr("height", h);
 
     svg.selectAll("circle")
-.data(nodes.slice(1))
+    .data(nodes.slice(1))
     .enter().append("svg:circle")
     .attr("r", function(d) { return d.radius - 2; })
     .style("fill", function(d, i) { return color(i % 3); });
 
     force.on("tick", function(e) {
-            var q = d3.geom.quadtree(nodes),
-            i = 0,
-            n = nodes.length;
+        var q = d3.geom.quadtree(nodes),
+        i = 0,
+        n = nodes.length;
 
-            while (++i < n) {
+        while (++i < n) {
             q.visit(collide(nodes[i]));
-            }
+        }
 
-            svg.selectAll("circle")
-            .attr("cx", function(d) { return d.x; })
-            .attr("cy", function(d) { return d.y; });
-            });
+        svg.selectAll("circle")
+        .attr("cx", function(d) { return d.x; })
+        .attr("cy", function(d) { return d.y; });
+    });
 
-svg.on("mousemove", function() {
+    svg.on("mousemove", function() {
         var p1 = d3.svg.mouse(this);
         root.px = p1[0];
         root.py = p1[1];
         force.resume();
-        });
+    });
 
-function collide(node) {
-    var r = node.radius + 16,
+    function collide(node) {
+        var r = node.radius + 16,
         nx1 = node.x - r,
         nx2 = node.x + r,
         ny1 = node.y - r,
         ny2 = node.y + r;
-    return function(quad, x1, y1, x2, y2) {
-        if (quad.point && (quad.point !== node)) {
-            var x = node.x - quad.point.x,
+        return function(quad, x1, y1, x2, y2) {
+            if (quad.point && (quad.point !== node)) {
+                var x = node.x - quad.point.x,
                 y = node.y - quad.point.y,
                 l = Math.sqrt(x * x + y * y),
                 r = node.radius + quad.point.radius;
-            if (l < r) {
-                l = (l - r) / l * .5;
-                node.x -= x *= l;
-                node.y -= y *= l;
-                quad.point.x += x;
-                quad.point.y += y;
+                if (l < r) {
+                    l = (l - r) / l * .5;
+                    node.x -= x *= l;
+                    node.y -= y *= l;
+                    quad.point.x += x;
+                    quad.point.y += y;
+                }
             }
-        }
-        return x1 > nx2
+            return x1 > nx2
             || x2 < nx1
             || y1 > ny2
             || y2 < ny1;
-    };
-}
+        };
+    }
 
-</script>
-  </body>
-</html>
+    </script>
+    </html>

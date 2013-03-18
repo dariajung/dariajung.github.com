@@ -92,6 +92,10 @@ line {
     color: #1181B8;
 }
 
+.static {
+    line-height: 18px;
+}
+
 a:link, a:visited {
     color: #088da5;
     text-decoration: none;

@@ -41,7 +41,9 @@ h2 {
 
 h3 {
     font-size: 20px;
-    line-height: 0px;
+    line-height: 2px;
+    font-weight: normal;
+    margin-top: 20px;
 }
 
 #header.inverted, #footer.inverted {

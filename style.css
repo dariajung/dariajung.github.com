@@ -4,8 +4,10 @@ body {
     margin: 25px;
     font-size: 14px;
     /*font-family: Century Gothic, sans-serif;*/
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-    font-weight: 300;
+    /*font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;*/
+    /*font-family: font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;*/
+    font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+    font-weight: normal;
     max-width: 75%;
     margin-left: 3%;
     min-height: 101%;
@@ -37,6 +39,8 @@ h2 {
     font-size: 35px;
     /*color: #369;*/
     color: #088da5;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+
 }
 
 h3 {
@@ -44,6 +48,8 @@ h3 {
     line-height: 2px;
     font-weight: normal;
     margin-top: 20px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+
 }
 
 #header.inverted, #footer.inverted {
@@ -120,6 +126,7 @@ a:hover {
 }
 
 nav {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     position: absolute;
     top: 5%;
     margin-left: 26%;

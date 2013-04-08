@@ -1,7 +1,7 @@
 body {
     background: url("grey.png");
     overflow: hidden;
-    margin: 25px;
+    margin: 35px;
     font-size: 14px;
     /*font-family: Century Gothic, sans-serif;*/
     /*font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;*/
@@ -30,13 +30,13 @@ h1 {
     margin: 0px;
     margin-bottom: 20px;
     line-height: 30px;
-    font-size: 60px;
+    font-size: 50px;
     font-family: Century Gothic, sans-serif;
 }
 
 h2 {
     line-height: 30px;
-    font-size: 35px;
+    font-size: 30px;
     /*color: #369;*/
     color: #088da5;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -129,7 +129,7 @@ nav {
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     position: absolute;
     top: 5%;
-    margin-left: 26%;
+    margin-left: 20%;
     width: auto;
 }
 

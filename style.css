@@ -2,7 +2,7 @@ body {
     background: url("grey.png");
     overflow: hidden;
     margin: 35px;
-    font-size: 14px;
+    font-size: 13px;
     /*font-family: Century Gothic, sans-serif;*/
     /*font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;*/
     /*font-family: font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;*/
@@ -129,7 +129,7 @@ nav {
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     position: absolute;
     top: 5%;
-    margin-left: 20%;
+    margin-left: 22%;
     width: auto;
 }
 

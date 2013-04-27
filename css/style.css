@@ -15,3 +15,13 @@ nav ul li {
 	margin: 10px;
 }
 
+a:link, a:visited {
+    color: #088da5;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #666;
+    text-decoration: none;
+}
+

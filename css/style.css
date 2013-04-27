@@ -24,3 +24,13 @@ a:hover {
     text-decoration: none;
 }
 
+#intro {
+	/*border-top: solid #088da5;
+	border-bottom: solid #088da5;*/
+	text-align: center;
+	line-height: 1.3em;
+	margin-top: 5%;
+	margin-bottom: 5%;
+
+}
+

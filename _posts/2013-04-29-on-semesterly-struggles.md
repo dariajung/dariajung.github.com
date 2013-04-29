@@ -8,7 +8,7 @@ category: posts
 
 It is 2:00 AM on a Monday ~~night~~ morning as I struggle to finish my last Computer Science Theory problem set. I would venture to say that this is the hardest homework assignment I have had in this class. To be honest, I'm not exactly sure what I am accomplishing by staying up, staring at the problems that my brain simply cannot comprehend at this time. Maybe it is due to the hour of the day in which I am attempting to do it, or maybe it is my crippling fear of how I am unable to understand the questions it is asking of me, or perhaps it is simply that I am *incapable* of understanding the problems. (I'm not sure about that last bit; given enough time, I think something in my brain will click and I will end up chastising myself for being so overdramatic.)
 
-Nevertheless, the problem still stands: I am unable to finish my problem set.
+Nevertheless, the issue stands: I am unable to finish my problem set.
 
 More often than not, I find myself in this situation where I wonder where I have gone wrong this semester. I am now nearing the end of my fourth semester and not a semester has gone by when I have not asked myself this question. How did I go from feeling so good about a class to doubting my place at an educational institution like Columbia? Yes, I know I am supposed to be struggling, but the struggle eventually leads to a sense of defeat where I usually end up passively resigning myself to a "terrible" grade. When it seems like all of your classmates are, well to put it crassly, on top of their shit, what is it that *I* am doing wrong? Clearly there must be something wrong with *me*.... But is there something wrong with me? ~~Or is this all a product of the dreaded Sophomore Slump?~~
 

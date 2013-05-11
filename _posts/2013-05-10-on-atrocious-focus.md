@@ -5,7 +5,7 @@ category: posts
 ---
 
 	If (daria.has(finals)) { 
-		daria.concetration = ATROCIOUS; 
+		daria.concentration = ATROCIOUS; 
 	}
 
 Man oh man. It's finals season here at Columbia. And as the title suggests, I am having a rough time concentrating on my studies. Maybe it's the weather *finally* turning nice. Or maybe it's the shitstorm of a week Columbia's been having (racist hate crimes, cheating scandals, more cheating scandals). Whatever it is, I am having an atrocious time focusing.

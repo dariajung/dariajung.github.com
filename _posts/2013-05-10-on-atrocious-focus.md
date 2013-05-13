@@ -22,3 +22,5 @@ Oh, and yesterday, I went to check my mail, and this thing was in my mailbox:
 
 How cute. I have no idea who sent it. Reveal yourself, friend! 
 It made my day a whole lot better while I was scrambling to study for my Major Topics in East Asian Civilizations final.
+
+*Addendum: The Roaree stress reliever was sent from my friend Dina. &hearts;*

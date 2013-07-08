@@ -12,10 +12,9 @@ the school year, where I feel myself sinking under the pressures of school.
 <center>Here's a photo recap of what I've been up to:
 
 ![](/images/ocean.jpg)
-**Neil Gaiman, Uncovered** at the Brooklyn Academy of Music. 
-He said he liked my hair but I was so flustered 
+*Neil Gaiman, Uncovered* at the Brooklyn Academy of Music. 
 
-that all I could tell him was that I loved following him on Tumblr. 
+He said he liked my hair but I was so flustered that all I could tell him was that I loved following him on Tumblr. 
 
 ![](/images/businesscard.jpg)
 Hack the Met, a VIP tour of the Met which 'hacks' the Met to see the Met afterhours.

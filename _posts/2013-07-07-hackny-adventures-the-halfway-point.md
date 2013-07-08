@@ -9,27 +9,27 @@ From working, to spending evenings listening to speakers from the hackNY lecture
 time is flowing a little too quickly. Being in NYC during the summer is way different from being here during
 the school year, where I feel myself sinking under the pressures of school.
 
-<center>Here's a photo recap of what I've been up to:
+<center>Here's a photo recap of what I've been up to:</center>
 
-![](/images/ocean.jpg)
-*Neil Gaiman, Uncovered* at the Brooklyn Academy of Music. 
+![Neil](/images/ocean.jpg)
+<center>*Neil Gaiman, Uncovered* at the Brooklyn Academy of Music. </center>
 
-He said he liked my hair but I was so flustered that all I could tell him was that I loved following him on Tumblr. 
+<center>He said he liked my hair but I was so flustered that all I could tell him was that I loved following him on Tumblr. </center>
 
-![](/images/businesscard.jpg)
-Hack the Met, a VIP tour of the Met which 'hacks' the Met to see the Met afterhours.
-
-
-![](/images/deer.jpg)
-There's a dead deer under those glass balls.
-Creepy, but beautiful.
-
-![](/images/polaroid.jpg)
-With my friend, Jen. 
+![met](/images/businesscard.jpg)
+<center>Hack the Met, a VIP tour of the Met which 'hacks' the Met to see the Met afterhours.</center>
 
 
-![](/images/clrs.jpg)
-CLRS cover, anyone?
+![deer](/images/deer.jpg)
+<center>There's a dead deer under those glass balls.</center>
+<center>Creepy, but beautiful.</center>
 
-![](/images/smorgasburg.jpg)
-Smorgasburg one of the Brooklyn Fleas, which is dedicated to food. 
+![polaroid](/images/polaroid.jpg)
+<center>With my friend, Jen. </center>
+
+
+![clrs](/images/clrs.jpg)
+<center>CLRS cover, anyone?</center>
+
+![bklyn](/images/smorgasburg.jpg)
+<center>Smorgasburg one of the Brooklyn Fleas, which is dedicated to food. </center>

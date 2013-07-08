@@ -12,7 +12,7 @@ the school year, where I feel myself sinking under the pressures of school.
 <center>Here's a photo recap of what I've been up to:</center>
 
 ![Neil](/images/ocean.jpg)
-<center>*Neil Gaiman, Uncovered* at the Brooklyn Academy of Music. </center>
+<center>Neil Gaiman, Uncovered at the Brooklyn Academy of Music. </center>
 
 <center>He said he liked my hair but I was so flustered that all I could tell him was that I loved following him on Tumblr. </center>
 

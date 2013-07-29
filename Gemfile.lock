@@ -20,7 +20,7 @@ GEM
     pygments.rb (0.3.7)
       posix-spawn (~> 0.3.6)
       yajl-ruby (~> 1.1.0)
-    rake (10.0.4)
+    rake (10.1.0)
     rdiscount (2.0.7.2)
     rmagick (2.13.2)
     syntax (1.0.0)
@@ -31,6 +31,6 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll
-  rake
+  rake (>= 10.1.0)
   rdiscount
-  rmagick
+  rmagick (~> 2.13.1)

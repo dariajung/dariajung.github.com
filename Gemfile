@@ -6,3 +6,6 @@ gem 'jekyll'
 
 gem 'rmagick', "~> 2.13.1"
 
+gem 'directory_watcher', '1.4'
+
+

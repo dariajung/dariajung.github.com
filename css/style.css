@@ -1,36 +1,98 @@
-#footer {
-	margin-left: 5%;
-	margin-right: 5%;
-	margin-bottom: 2%;
+body {
+	margin: 0;
+	font-family: "Open Sans";
+	font-weight: 100;
 }
 
-nav {
+.header {
+	background: url('../assets/cream_dust.png');
+	height: 300px;
+	width: 100%;
+	border-bottom: 1px solid #E7E7E7;
+}
+
+.header-text {
+	margin-right: 28%;
+	text-align: right;
+	font-size: 20px;
+}
+
+p {
+	margin: 0;
+}
+
+.header h1 {
+	padding-top: 60px;
+	font-family: 'Playfair Display', serif;
+	font-size: 50px;
+	margin: 0;
+	font-style: italic;
 	text-align: center;
 }
 
-nav ul li {
-	display: inline-block;
+h2 {
+	font-family: 'Playfair Display', serif;
+	font-style: italic;
+	font-size: 50px;
+	margin: 0;
+}
+
+.content {
+	margin-left: 33%;
+	margin-top: 46px;
+}
+
+.header a {
+	color: #000;
+	font-weight: 400;
+	text-decoration: none;
+	margin-left: 10px;
+}
+
+.header a:hover {
+	color: #666;
+}
+
+.project {
+	height: 270px;
+	border-bottom: 1px solid #E7E7E7;
+	margin: 0;
+}
+
+.tags {
+	margin-top: 10px;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+
+.project-image {
 	position: relative;
-	margin: 10px;
+	min-width: 150px;
+	float: left;
+	width: 23%;
+	margin: 60px;
 }
 
-a:link, a:visited {
-    color: #088da5;
-    text-decoration: none;
+.project-icon {
+	position: relative;
+	min-width: 150px;
+	float: left;
+	width: 23%;
+	font-size: 150px;
+	margin-left: 100px;
 }
 
-a:hover {
-    color: #666;
-    text-decoration: none;
+.tags span {
+	text-transform: uppercase;
+	padding-bottom: 2px;
+	margin-right: 12px;
+	padding-right: 5px;
+	padding-left: 5px;
+	border: 2px solid;
+	padding-top: 2px;
+	font-size: 19px;
+	color: #222;
 }
-
-#intro {
-	/*border-top: solid #088da5;
-	border-bottom: solid #088da5;*/
-	text-align: center;
-	line-height: 1.3em;
-	margin-top: 5%;
-	margin-bottom: 5%;
-
-}
-

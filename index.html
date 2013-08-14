@@ -1,21 +1,97 @@
----
-layout: layout
-title: "Daria Jung | Posts"
----
-
-<section class="content">
-</br>
-<div id="intro">
-	<h4><i class="icon icon-quote-left"></i> You have stumbled onto the blog of a 20 year old aspiring software engineer.</br> She believes in cats, code, music, and a good cup of earl grey.
- <i class="icon icon-quote-right"></i></h4>
-	<i class="icon icon-home icon-4x"></i>
-</div>
-  <h1 class="thin">POSTS</h1>
-  <ul class="listing">
-    {% for post in site.posts %}
-    <li>
-      <span>{{ post.date | date: "%B %e, %Y" }}</span> <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
-    {% endfor %}
-  </ul>
-</section>
+<html>
+	<head>
+        <link rel="shortcut icon" href="assets/images/favicon.png?v=2" />
+        <link rel="Stylesheet" type="text/css" href="css/style.css" />
+        <link rel='Stylesheet' type='text/css' href='assets/font-awesome/css/font-awesome.css' />
+        <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+        <title>Daria Jung - hacker x student</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport", content="width=device-width, initial-scale=1" />
+		<link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,900,400italic,900italic' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+    	<div class='header'>
+    		<h1>Hello, my name is Daria.</h1>
+    		<div class='header-text'>
+	    		<p>Hacker x Student based in New York City.</p>
+	    		<p>Feel free to look around or find me on:</p>
+	    		<span class='social-media'>
+	    			<a target='_blank' href="http://twitter.com/djj2115">Twitter</a> 
+	    			<a target='_blank' href="http://github.com/dariajung">GitHub</a> 
+	    			<a target="_blank" href="http://bloglovin.com/dariajung">Bloglovin</a>
+	    			<a target="_blank" href="mailto:djj2115cu@gmail.com">Email</a>
+	    		</span>
+	    	</div>
+    	</div>
+    	<a href="http://zencephalon.com:4567">
+	    	<div class='project'>
+	    		<img class='project-image' src='assets/images/tekstflyt.png'>
+	    		<div class='content'>
+	    			<h2>Tekstflyt.</h2> </br>
+	    			A way to flow your thoughts.
+	    			<div class='tags'> 
+	    				<span>Writing</span>
+	    				<span>Collboration</span>
+	    				<span>hackny</span>
+	    			</div>
+	    		</div>
+	    	</div>
+	    </a>
+	    <a href="http://github.com/dariajung/hackny-s13">
+	    	<div class='project'>
+	    		<img class='project-image' src='assets/images/fsq.png'>
+	    		<div class='content'>
+	    			<h2>Foursynth.</h2> </br>
+	    			A musical synthesizer for the browser.
+	    			<div class='tags'> 
+	    				<span>Arduino</span>
+	    				<span>Collboration</span>
+	    				<span>Hackathon</span>
+	    			</div>
+	    		</div>
+	    	</div>
+	    </a>
+	    <a href="https://github.com/dinalamdany/instagramophone">
+	    	<div class='project'>
+	    		<img class='project-image' src='assets/images/instagramophone.png'>
+	    		<div class='content'>
+	    			<h2>Instagramophone.</h2> </br>
+	    			Like Instagram. But for sounds.
+	    			<div class='tags'> 
+	    				<span>Jokes</span>
+	    				<span>Collboration</span>
+	    				<span>Hackathon</span>
+	    			</div>
+	    		</div>
+	    	</div>
+	    </a>
+	    <a href="http://havemybabieshackny.herokuapp.com/">
+	    	<div class='project'>
+	    		<img class='project-image' src='assets/images/hmb.png'>
+	    		<div class='content'>
+	    			<h2>have my babies.</h2> </br>
+	    			Visualization of tweets with the phrase 'have my babies'.
+	    			<div class='tags'> 
+	    				<span>Jokes</span>
+	    				<span>Collboration</span>
+	    				<span>Hackathon</span>
+	    			</div>
+	    		</div>
+	    	</div>
+	    </a>
+	    <a href="https://github.com/ChimeraCoder/ncnyt">
+	    	<div class='project'>
+	    		<div class='project-icon'><i class="icon-terminal"></i></div>
+	    		<div class='content'>
+	    			<h2>ncnyt.</h2> </br>
+	    			A New York Times reader for the terminal.
+	    			<div class='tags'> 
+	    				<span>Collboration</span>
+	    				<span>Hackathon</span>
+	    			</div>
+	    		</div>
+	    	</div>
+	    </a>
+    </body>
+</html>

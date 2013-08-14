@@ -30,6 +30,16 @@ p {
 	text-align: center;
 }
 
+.header h1 a {
+	margin: 0;
+	font-weight: 900;
+	text-decoration: underline;
+}
+
+.header h1 a:hover {
+	text-decoration: none;
+}
+
 h2 {
 	font-family: 'Playfair Display', serif;
 	font-style: italic;
@@ -95,4 +105,53 @@ a {
 	padding-top: 2px;
 	font-size: 19px;
 	color: #222;
+}
+
+.about {
+	color: #fff;
+	font-family: 'Playfair Display', serif;
+	font-size: 40px;
+}
+
+.about a {
+	color: #fff;
+	font-style: italic;
+}
+
+.about p {
+	padding: 30px;
+	border-bottom: 1px solid #fff;
+}
+
+.intro {
+	background: #2BBFBD;
+	font-size: 70px;
+}
+
+.columbia {
+	background: #75B2DD;
+}
+
+.hackny {
+	background: #EF0000;
+}
+
+.bloglovin {
+	background: #40AEEB;
+}
+
+.adicu {
+	background: #76BFE5;
+}
+
+.music {
+	background: #F2B33D;
+}
+
+.back {
+	color: #fff;
+}
+
+.back a {
+	color: #000;
 }

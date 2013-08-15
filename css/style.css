@@ -14,12 +14,35 @@ body {
 .header-text {
 	margin-right: 50px;
 	text-align: right;
-	font-size: 20px;
-	margin-top: 20px;
+	font-size: 16px;
+	margin-top: 10px;
 }
 
 p {
 	margin: 0;
+}
+
+.social-link:hover, .header a:hover {
+	color: #666;
+}
+
+.tagline {
+	font-size: 22px;
+}
+
+.social-link {
+	color: #000;
+	font-weight: 400;
+	text-decoration: none;
+	margin-left: 10px;
+}
+
+.social-media {
+	font-size: 20px;
+}
+
+.header a {
+	font-weight: 400;
 }
 
 .header h1 {
@@ -51,17 +74,6 @@ h2 {
 .content {
 	margin-left: 33%;
 	margin-top: 46px;
-}
-
-.header a {
-	color: #000;
-	font-weight: 400;
-	text-decoration: none;
-	margin-left: 10px;
-}
-
-.header a:hover {
-	color: #666;
 }
 
 .project {
@@ -96,7 +108,7 @@ a {
 	border-radius: 100px;
 	margin-right: 300px;
 	margin-left: 16px;
-	margin-top: -20px;
+	margin-top: -12px;
 }
 
 .project-icon {

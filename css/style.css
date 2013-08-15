@@ -7,7 +7,7 @@ body {
 .header {
 	background: url('../assets/cream_dust.png');
 	height: 300px;
-	width: 1280px;
+	min-width: 1280px;
 	border-bottom: 1px solid #E7E7E7;
 }
 
@@ -67,7 +67,7 @@ h2 {
 	height: 270px;
 	border-bottom: 1px solid #E7E7E7;
 	margin: 0;
-	width: 1280px;
+	min-width: 1280px;
 }
 
 .tags {

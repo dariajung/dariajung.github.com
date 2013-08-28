@@ -8,7 +8,7 @@ body {
 .header {
 	background: url('../assets/cream_dust.png');
 	min-height: 300px;
-	min-width: 800px;
+	/*min-width: 800px;*/
 	border-bottom: 1px solid #E7E7E7;
 }
 
@@ -22,7 +22,7 @@ body {
 .text-wrapper {
 	margin-left: auto;
 	margin-right: auto;
-	width: 650px;
+	max-width: 650px;
 }
 
 p {
@@ -84,10 +84,10 @@ h2 {
 }
 
 .project {
-	height: 250px;
+	min-height: 250px;
 	border-bottom: 1px solid #E7E7E7;
 	margin: 0;
-	min-width: 800px;
+	/*min-width: 800px;*/
 }
 
 .tags {
@@ -190,4 +190,48 @@ a {
 
 .back a {
 	color: #000;
+}
+
+@media (max-width: 400px) {
+	.header {
+		padding-bottom: 50px;
+	}
+	.text-wrapper {
+		width: 375px;
+	}
+	.tagline {
+		font-size: 16px;
+	}
+
+	.project {
+		height: auto;
+		padding-left: 10px;
+	}
+
+	.project .content {
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+	.project-image {
+		text-align: center;
+		margin: 10px 60px 10px 60px;
+	}
+	.project h2 {
+		font-size: 30px;
+	}
+	.project-icon {
+		margin-top: -25px;
+		position: relative;
+		min-width: 150px;
+		float: left;
+		width: 23%;
+		font-size: 150px;
+		margin-left: 10px;
+		margin-right: auto;
+	}
+	.tags span {
+		display: inline-block;
+		margin-bottom: 10px;
+	}
 }

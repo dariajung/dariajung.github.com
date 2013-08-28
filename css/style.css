@@ -7,8 +7,8 @@ body {
 
 .header {
 	background: url('../assets/cream_dust.png');
-	height: 300px;
-	min-width: 1280px;
+	min-height: 300px;
+	min-width: 800px;
 	border-bottom: 1px solid #E7E7E7;
 }
 
@@ -17,6 +17,12 @@ body {
 	text-align: right;
 	font-size: 16px;
 	margin-top: 10px;
+}
+
+.text-wrapper {
+	margin-left: auto;
+	margin-right: auto;
+	width: 650px;
 }
 
 p {
@@ -81,7 +87,7 @@ h2 {
 	height: 250px;
 	border-bottom: 1px solid #E7E7E7;
 	margin: 0;
-	min-width: 1280px;
+	min-width: 800px;
 }
 
 .tags {
@@ -111,7 +117,6 @@ a {
 	float: right;
 	clear: right;
 	border-radius: 100px;
-	margin-right: 300px;
 	margin-left: 16px;
 	margin-top: -12px;
 }

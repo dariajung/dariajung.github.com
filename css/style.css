@@ -2,6 +2,7 @@ body {
 	margin: 0;
 	font-family: "Open Sans";
 	font-weight: 100;
+	overflow-x: hidden; 
 }
 
 .header {

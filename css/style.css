@@ -1,5 +1,8 @@
-body {
-	margin: 0;
+html, body {
+	width: 100%;
+    padding: 0px;
+    overflow-x: hidden;
+    margin: 0;
 	font-family: "Open Sans";
 	font-weight: 100;
 	overflow-x: hidden; 
@@ -192,7 +195,7 @@ a {
 	color: #000;
 }
 
-@media (max-width: 400px) {
+@media screen and (max-width: 400px) {
 	.header {
 		padding-bottom: 50px;
 	}
@@ -233,5 +236,46 @@ a {
 	.tags span {
 		display: inline-block;
 		margin-bottom: 10px;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	body {
+		overflow-x: hidden;
+	}
+
+	.tags span {
+		font-size: 12px;
+	}
+	.tagline, p {
+		font-size: 12px;
+	}
+	.header-text {
+		margin-right: 100px;
+	}
+	.social-media {
+		width: 165px;
+		float: left;
+		display: inline-block;
+		clear: left;
+		font-size: 15px;
+	}
+	.image-me {
+		width: 100px;
+	}
+	.header h1 {
+		padding: 0px 10px 10px 0px;
+		font-size: 45px;
+	}
+	.project {
+		height: auto;
+		width: auto;
+	}	
+	.project .content {
+		width: 300px;
+	}
+	.project-image {
+		text-align: center;
+		margin: 10px 30px 10px 30px;
 	}
 }

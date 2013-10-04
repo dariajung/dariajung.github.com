@@ -115,6 +115,11 @@ a {
 	margin: 60px;
 }
 
+.adi-logo {
+	margin: 0 auto;
+	text-align: center;
+}
+
 .image-me {
 	position: relative;
 	max-width: 130px;
@@ -293,6 +298,10 @@ a {
 		display: inline-block;
 		margin-bottom: 10px;
 	}
+
+	.adi-logo {
+		margin: 10px 60px 10px 115px;
+	}
 }
 
 @media screen and (max-width: 320px) {
@@ -340,4 +349,12 @@ a {
 	.project-icon {
 		font-size: 130px;
 	}
+}
+
+a {
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
 }

@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    $('.content-wrapper').fadeIn('slow');
+    $('.content-wrapper').fadeIn(1500);
 
     $.scrollUp({
         scrollName: 'scrollUp', // Element ID

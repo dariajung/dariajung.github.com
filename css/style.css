@@ -8,6 +8,10 @@ html, body {
 	overflow-x: hidden; 
 }
 
+.content-wrapper {
+	display: none;
+}
+
 .header {
 	background: url('../assets/cream_dust.png');
 	min-height: 300px;

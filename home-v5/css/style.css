@@ -1,0 +1,117 @@
+html, body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+}
+
+.clearfix:after, .clearfix:before {
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.l-full-width {
+    width: 100%;
+}
+
+.navigation {
+    padding: 1em;
+    font-size: 1.5em;
+    border-bottom: 4px solid #DAD7D7;
+}
+
+#injected-content {
+    position: relative;
+}
+
+.name {
+    float: left;
+    color: #1ABB9C;
+}
+
+nav {
+    float: right;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    padding: 0 .8em;
+    list-style: none;
+    display: inline-block;
+}
+
+a {
+    color: #a0d9bc;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 1s all;
+    -webkit-transition: 1s all;
+    -moz-transition: 1s all;
+    -ms-transition: 1s all;
+}
+
+a:hover {
+    color: #1ABB9C;
+}
+
+.parallax {
+    background: url('/assets/cats.png');
+    background-size: 25%;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    color: #fff;
+}
+
+.container {
+    min-height: 600px;
+    border-bottom: 4px solid #DAD7D7;
+    overflow-x: hidden;
+    max-width: 100%;
+    height: 100%;
+    margin-bottom: none;
+    display: block;
+}
+
+.intro {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -263px;
+    margin-top: -109px;
+    text-shadow: 1px 1px 1px #0d967b;
+}
+
+.intro h1 {
+    font-size: 4em;
+}
+
+.intro p {
+    font-size: 1.5em;
+}
+
+.fade-leave, .fade-enter {
+  -webkit-transition:all 1s;
+  -moz-transition:all 1s;
+  -o-transition:all 1s;
+  transition:all 1s;
+}
+
+.fade-leave {
+  opacity:1;
+}
+.fade-leave.fade-leave-active {
+  opacity:0;
+}
+
+.fade-enter {
+  opacity:0;
+}
+.fade-enter.fade-enter-active {
+  opacity:1;
+}

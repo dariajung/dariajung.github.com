@@ -20,14 +20,14 @@ splashApp.config(['$routeProvider',
         })
 
         // route for the about page
-        .when('/projects', {
-            templateUrl : 'templates/projects.html',
+        .when('/portfolio', {
+            templateUrl : 'templates/portfolio.html',
             controller  : 'splashController'
         })
 
         // route for the social page
-        .when('/social', {
-            templateUrl : 'templates/social.html',
+        .when('/contact', {
+            templateUrl : 'templates/contact.html',
             controller  : 'splashController'
         })
         .otherwise({ redirectTo: '/home' });
@@ -113,32 +113,44 @@ var projects = [
 
 var about = [
     {
-        desc: "Columbia University Student (taking some time off)",
-        url: ""
+        desc: "A Columbia University Student (taking some time off)",
+        url: "http://columbia.edu",
+        divClass: "columbia"
     },
     {
-        desc: "Software Engineering Intern at Thinkful",
-        url: "http://thinkful.com"
+        desc: "A cat lover",
+        url: "http://teaplusmilk.com/jekyll/update/2013/10/14/fostering-kitkat.html",
+        divClass: "kitkat"
     },
     {
-        desc: "Former member of the Application Development Initiative",
-        url: "http://adicu.com"
+        desc: "A Software Engineering Intern at Thinkful",
+        url: "http://thinkful.com",
+        divClass: "tf"
     },
     {
-        desc: "Former Contract Web Developer at Olivers Apparel",
-        url: "http://oliversapparel.com/"
+        desc: "A former member of the Application Development Initiative",
+        url: "http://adicu.com",
+        divClass: "adicu"
     },
     {
-        desc: "Former Contract Web Developer at Unlimited Ltd. Clothing",
-        url: "http://unlimitedltdclothing.com/"
+        desc: "A former Contract Web Developer at Olivers Apparel",
+        url: "http://oliversapparel.com/",
+        divClass: "olivers"
     },
     {
-        desc: "Former Full-stack Developer at Bloglovin'",
-        url: "http://bloglovin.com"
+        desc: "A former Contract Web Developer at Unlimited Ltd. Clothing",
+        url: "http://unlimitedltdclothing.com/",
+        divClass: "unlimited"
     },
     {
-        desc: "hackNY Fellow class of 2013",
-        url: "http://hackny.org/a/2013/06/hackny-announces-the-class-of-2013-hackny-fellows/"
+        desc: "A former Full-stack Developer at Bloglovin'",
+        url: "http://bloglovin.com",
+        divClass: "bloglovin"
+    },
+    {
+        desc: "a hackNY alumNY - class of 2013",
+        url: "http://hackny.org/a/2013/06/hackny-announces-the-class-of-2013-hackny-fellows/",
+        divClass: "hackny"
     }
 ];
 

@@ -95,6 +95,100 @@ a:hover {
     font-size: 1.5em;
 }
 
+/* ABOUT */
+
+.about p {
+    padding: 30px;
+    margin: 0;
+    font-size: 2em;
+}
+
+.about a {
+    color: #fff;
+}
+
+.about a:hover {
+    transition: 1s all;
+    -webkit-transition: 1s all;
+    -moz-transition: 1s all;
+    -ms-transition: 1s all;
+    opacity: .55;
+}
+
+.olivers {
+    background: #314254;
+}
+
+.columbia {
+    background: #75B2DD;
+}
+
+.kitkat {
+    background: #040d11;
+}
+
+.hackny {
+    background: #EF0000;
+}
+
+.bloglovin {
+    background: #40AEEB;
+}
+
+.adicu {
+    background: #76BFE5;
+}
+
+.unlimited {
+    background: #D9CEB1;
+}
+
+.tf {
+    background: #FF4646;
+}
+
+/* Contact Page */
+
+.social {
+    text-align: center;
+}
+
+.social .social-icon {
+    padding: 3em 2em;
+}
+
+.social a:hover {
+    opacity: 0.6;
+    -webkit-transition:all 1s;
+    -moz-transition:all 1s;
+    -o-transition:all 1s;
+    transition:all 1s;
+}
+
+.green-btn {
+    padding: 1em;
+    background: #1ABB9C;
+    width: 200px;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -webkit-transition:all 1s;
+    -moz-transition:all 1s;
+    -o-transition:all 1s;
+    transition:all 1s;
+    margin: 2em auto;
+}
+
+.green-btn:hover {
+    background: #16937a;
+}
+
+
+/* ng-animate */
+
 .fade-leave, .fade-enter {
   -webkit-transition:all 1s;
   -moz-transition:all 1s;

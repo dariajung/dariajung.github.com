@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang='en' ng-app="splashApp">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta property="og:title" content="Daria Jung | Hacker x Student">
+        <title ng-controller="titleController">Daria Jung - {{ pageTitle }}</title>
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+
+        <!-- Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.min.js"></script>
+
+        <!-- Javascript -->
+        <script src="js/home.js"></script>
+
+        <!-- Font -->
+        <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    </head>
+    <body ng-controller="splashController" ng-cloak>
+
+        <!-- header + nav -->
+        <div class="navigation clearfix">
+            <div class="name">Daria Jung</div>
+            <div class="mobile-nav" ng-click="toggleMobile()">
+                <ul ng-hide="mobileNavCollapsed" ng-animate="'fade'">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <!-- Angular Template Injection -->
+        <div id="injected-content">
+            <div ng-view ng-animate="'fade'"></div>
+        </div>
+    </body>
+</html>

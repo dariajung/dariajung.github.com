@@ -34,80 +34,51 @@ splashApp.config(['$routeProvider',
     }
 ]);
 
-splashApp.controller('splashController', function($scope) {
+splashApp.controller('splashController', function($scope, $window) {
     $scope.message = "Hello, World!";
     $scope.projects = projects;
     $scope.about = about;
+    $scope.mobileNavCollapsed = true;
+
+    $scope.toggleMobile = function() {
+        $scope.mobileNavCollapsed = !$scope.mobileNavCollapsed;
+    };
 });
 
 // Map
 
 var projects = [
     {
-        name: "Thinkful",
-        url: "http://thinkful.com",
-        img: "",
-        value: 1
-    },
-    {
         name: "Tea Plus Milk",
-        url: "http://teaplusmilk.com",
-        img: "",
-        value: 2
+        url: "http://teaplusmilk.com"
     },
     {
         name: "Excuseti.me",
-        url: "http://excuseti.me",
-        img: "",
-        value: 3
+        url: "http://excuseti.me"
     },
     {
         name: "Learn",
-        url: "http://learn.adicu.com",
-        img: "",
-        value: 4
+        url: "http://learn.adicu.com"
     },
     {
         name: "Tekstflyt",
-        url: "http://zencephalon.com:4567/",
-        img: "",
-        value: 5
-    },
-    {
-        name: "Bloglovin",
-        url: "http://bloglovin.com",
-        img: "",
-        value: 6
-    },
-    {
-        name: "hackNY",
-        url: "http://hackNY.org",
-        img: "",
-        value: 7
+        url: "http://zencephalon.com:4567/"
     },
     {
         name: "FourSynth",
-        url: "http://github.com/dariajung/hackny-s13",
-        img: "",
-        value: 8
+        url: "http://github.com/dariajung/hackny-s13"
     },
     {
         name: "Instagramophone",
-        url: "https://github.com/dinalamdany/instagramophone",
-        img: "",
-        value: 9
+        url: "https://github.com/dinalamdany/instagramophone"
     },
     {
         name: "have my babies",
-        url: "http://havemybabieshackny.herokuapp.com/",
-        img: "",
-        value: 10
+        url: "http://havemybabieshackny.herokuapp.com/"
     },
     {
         name: "ncnyt",
-        url: "https://github.com/ChimeraCoder/ncnyt",
-        img: "",
-        value: 11
+        url: "https://github.com/ChimeraCoder/ncnyt"
     }
 ];
 

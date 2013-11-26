@@ -29,6 +29,17 @@ html, body {
     color: #1ABB9C;
 }
 
+.mobile-nav {
+    background: url('/assets/menu.png') no-repeat;
+    height: 16px;
+    width: 19px;
+    position: absolute;
+    right: 1.5em;
+    vertical-align: middle;
+    top: 1.35em;
+    display: none;
+}
+
 nav {
     float: right;
 }
@@ -58,7 +69,7 @@ a:hover {
     color: #1ABB9C;
 }
 
-.parallax {
+.cats {
     background: url('/assets/cats.png');
     background-size: 25%;
     width: 100%;
@@ -79,11 +90,13 @@ a:hover {
 
 .intro {
     text-align: center;
+    margin: auto;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-left: -263px;
-    margin-top: -109px;
+    top: 0; 
+    left: 0; 
+    bottom: 0; 
+    right: 0;
+    height: 250px;
     text-shadow: 1px 1px 1px #0d967b;
 }
 
@@ -147,10 +160,64 @@ a:hover {
     background: #FF4646;
 }
 
+/* Portfolio Page */
+.portfolio {
+    background: url('/assets/grilled.png') center;
+    padding: 1em 1em 2em;
+    margin: 0 auto;
+    border-bottom: none;
+}
+
+.project-wrapper {
+    max-width: 702px;
+    margin: 0 auto;
+}
+
+.project {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    padding: 1em;
+    border: 1px solid #34bb99;
+}
+
+.project a {
+    text-align: center;
+    margin: auto;
+    position: relative;
+    top: 75px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.project:nth-child(2n+1) {
+    background-color: #34bb99;
+}
+
+.project:nth-child(2n+1) a {
+    color: #fff;
+}
+
+.project:nth-child(2n+1) a:hover {
+    color: #148A6B;
+}
+
 /* Contact Page */
+
+.contact {
+    background: url('/assets/grilled.png') center;
+}
 
 .social {
     text-align: center;
+}
+
+.contact h1, .portfolio h1 {
+    text-align: center;
+    color: #1ABB9C;
+    text-transform: uppercase;
 }
 
 .social .social-icon {
@@ -186,7 +253,6 @@ a:hover {
     background: #16937a;
 }
 
-
 /* ng-animate */
 
 .fade-leave, .fade-enter {
@@ -208,4 +274,82 @@ a:hover {
 }
 .fade-enter.fade-enter-active {
   opacity:1;
+}
+
+.fade-hide, .fade-show {
+  -webkit-transition:all 1s;
+  -moz-transition:all 1s;
+  -o-transition:all 1s;
+  transition:all 1s;
+}
+
+.fade-hide {
+  opacity: 1;
+}
+.fade-hide.fade-hide-active {
+  opacity: 0;
+}
+
+.fade-show {
+  opacity: 0;
+}
+.fade-show.fade-show-active {
+  opacity: 1;
+}
+
+@media screen and (max-width: 850px) {
+    .mobile-nav {
+        display: inline-block;
+        -webkit-transition:all 1s;
+        -moz-transition:all 1s;
+        -o-transition:all 1s;
+        transition:all 1s;
+        cursor: pointer;
+    }
+    .mobile-nav a {
+        color: #34bb99;
+    }
+    .mobile-nav a:hover {
+        color: #219e7c;
+    }
+    .mobile-nav ul {
+        position: absolute;
+        right: -35px;
+        top: 49px;
+        z-index: 1;
+        background-color: rgba(255, 255, 255, 0.85);
+        width: 200px;
+    }  
+    .mobile-nav li {
+        text-align: right;
+        padding: .5em .8em;
+    }
+    nav {
+        display: none;
+    } 
+    .social .social-icon {
+        padding: 0em .5em;
+    }
+}
+
+@media screen and (max-width: 733px) {
+    .project-wrapper {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 682px) {
+    .social .social-icon {
+        padding: 3em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .intro {
+        height: 205px;;
+    }
+    .intro h1 {
+        padding: 0em 0.2em;
+        font-size: 3em;
+    }
 }

@@ -13,7 +13,6 @@
 
         <!-- Libraries -->
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
         <!-- Javascript -->
         <script src="js/home.js"></script>
@@ -26,6 +25,14 @@
         <!-- header + nav -->
         <div class="navigation clearfix">
             <div class="name">Daria Jung</div>
+            <div class="mobile-nav" ng-click="toggleMobile()">
+                <ul ng-hide="mobileNavCollapsed" ng-animate="'fade'">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
             <nav>
                 <ul>
                     <li><a href="#home">Home</a></li>

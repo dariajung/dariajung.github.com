@@ -9,24 +9,28 @@ splashApp.config(['$routeProvider',
         $routeProvider
 
         .when('/home', {
+            pageTitle: 'Home',
             templateUrl : 'templates/home.html',
             controller  : 'splashController'
         })
 
         // route for the about page
         .when('/about', {
+            pageTitle: 'About',
             templateUrl : 'templates/about.html',
             controller  : 'splashController'
         })
 
         // route for the about page
         .when('/portfolio', {
+            pageTitle: 'Portfolio',
             templateUrl : 'templates/portfolio.html',
             controller  : 'splashController'
         })
 
         // route for the social page
         .when('/contact', {
+            pageTitle: 'Contact',
             templateUrl : 'templates/contact.html',
             controller  : 'splashController'
         })
@@ -43,6 +47,12 @@ splashApp.controller('splashController', function($scope, $window) {
     $scope.toggleMobile = function() {
         $scope.mobileNavCollapsed = !$scope.mobileNavCollapsed;
     };
+});
+
+splashApp.controller('titleController', function($scope, $route, $log) {
+    $scope.$on('$routeChangeSuccess', function() {
+        $scope.pageTitle = $route.current.pageTitle;
+    });
 });
 
 // Map

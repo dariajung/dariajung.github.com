@@ -89,6 +89,10 @@ var projects = [
     {
         name: "ncnyt",
         url: "https://github.com/ChimeraCoder/ncnyt"
+    },
+    {
+        name: "bloom",
+        url: "https://github.com/dariajung/bloom"
     }
 ];
 

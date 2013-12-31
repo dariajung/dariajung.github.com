@@ -168,6 +168,10 @@ a:hover {
     background: #FF4646;
 }
 
+.yoga {
+    background: #6BCCDF;
+}
+
 /* Portfolio Page */
 .portfolio {
     background: url('/assets/grilled.png') center;

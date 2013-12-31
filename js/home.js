@@ -108,6 +108,11 @@ var about = [
         divClass: "kitkat"
     },
     {
+        desc: "A yoga practitioner at Sacred Sounds Yoga",
+        url: "http://sacredsoundsyoga.com/",
+        divClass: "yoga"
+    },
+    {
         desc: "A Software Engineering Intern at Thinkful",
         url: "http://thinkful.com",
         divClass: "tf"

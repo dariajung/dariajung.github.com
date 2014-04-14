@@ -172,6 +172,14 @@ a:hover {
     background: #6BCCDF;
 }
 
+.haskell {
+    background: #60b044;
+}
+
+.sailthru {
+    background: #00ccec;
+}
+
 /* Portfolio Page */
 .portfolio {
     background: url('/assets/grilled.png') center;

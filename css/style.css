@@ -30,11 +30,13 @@ html, body {
 
 .name a {
     text-transform: none;
-    color: #1ABB9C;
+    /*color: #1ABB9C;*/
+    color: #000;
 }
 
 .name a:hover {
-    color: #148A6B;
+    color: #777;
+    /*color: #148A6B;*/
 }
 
 .mobile-nav {
@@ -64,7 +66,8 @@ li {
 }
 
 a {
-    color: #a0d9bc;
+    /*color: #a0d9bc;*/
+    color: #000;
     text-transform: uppercase;
     text-decoration: none;
     transition: 1s all;
@@ -74,11 +77,12 @@ a {
 }
 
 a:hover {
-    color: #1ABB9C;
+    /*color: #1ABB9C;*/
+    color: #777;
 }
 
 .cats {
-    background: url('/assets/cats.png');
+    background: url('/assets/asteroids.jpg');
     background-size: 25%;
     width: 100%;
     height: auto;
@@ -105,7 +109,7 @@ a:hover {
     bottom: 0; 
     right: 0;
     height: 250px;
-    text-shadow: 1px 1px 1px #0d967b;
+    text-shadow: 1px 1px 1px #000;
 }
 
 .intro h1 {
@@ -199,7 +203,8 @@ a:hover {
     height: 200px;
     text-align: center;
     padding: 1em;
-    border: 1px solid #34bb99;
+    /*border: 1px solid #34bb99;*/
+    border: 1px solid #000;
 }
 
 .project a {
@@ -213,7 +218,8 @@ a:hover {
 }
 
 .project:nth-child(2n+1) {
-    background-color: #34bb99;
+    /*background-color: #34bb99;*/
+    background-color: #000;
 }
 
 .project:nth-child(2n+1) a {
@@ -221,7 +227,8 @@ a:hover {
 }
 
 .project:nth-child(2n+1) a:hover {
-    color: #148A6B;
+    /*color: #148A6B;*/
+    color: #777;
 }
 
 /* Contact Page */
@@ -237,7 +244,8 @@ a:hover {
 
 .contact h1, .portfolio h1 {
     text-align: center;
-    color: #1ABB9C;
+    /*color: #1ABB9C;*/
+    color: #000;
     text-transform: uppercase;
 }
 
@@ -272,6 +280,14 @@ a:hover {
 
 .green-btn:hover {
     background: #16937a;
+}
+
+.black {
+    background: #000;
+}
+
+.black:hover {
+    background: #777;
 }
 
 /* ng-animate */

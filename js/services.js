@@ -54,6 +54,10 @@ services.factory('aboutMap', function() {
                 desc: "A Columbia University Student (taking some time off)",
                 url: "http://columbia.edu",
                 divClass: "columbia"
+            }, {
+                desc: "A student at Hacker School (focusing on Haskell)",
+                url: "http://hackerschool.com",
+                divClass: "hackerschool"
             },
             {
                 desc: "A cat lover",
@@ -64,11 +68,6 @@ services.factory('aboutMap', function() {
                 desc: "A yoga practitioner at Sacred Sounds Yoga",
                 url: "http://sacredsoundsyoga.com/",
                 divClass: "yoga"
-            },
-            {
-                desc: "A person learning me some Haskell for great good",
-                url: "http://en.wikipedia.org/wiki/Haskell_(programming_language)",
-                divClass: "haskell"
             },
             {
                 desc: "A contract Web Developer at Sailthru",

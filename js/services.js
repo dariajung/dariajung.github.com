@@ -51,6 +51,11 @@ services.factory('aboutMap', function() {
         ],
         about: [
             {
+                desc: "Girlfriend of Matt.",
+                url: "http://zencephalon.com",
+                divClass: "bean"
+            },
+            {
                 desc: "A Columbia University Student (taking some time off)",
                 url: "http://columbia.edu",
                 divClass: "columbia"
@@ -70,7 +75,7 @@ services.factory('aboutMap', function() {
                 divClass: "yoga"
             },
             {
-                desc: "A contract Web Developer at Sailthru",
+                desc: "A former contract Web Developer at Sailthru",
                 url: "http://www.sailthru.com/",
                 divClass: "sailthru"
             },

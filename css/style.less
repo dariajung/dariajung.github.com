@@ -1,0 +1,116 @@
+@import url(http://fonts.googleapis.com/css?family=Alegreya);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400);
+
+.fa-external-link {
+    vertical-align: middle;
+    font-size: .75em;
+}
+
+.css-typing
+{
+    width: 30em;
+    white-space:nowrap;
+    overflow:hidden;
+    -webkit-animation: type 5s steps(50, end);
+    animation: type 5s steps(50, end);
+}
+
+@keyframes type{
+    from { width: 0; }
+}
+
+@-webkit-keyframes type{
+    from { width: 0; }
+}
+
+.l-single-column {
+    width: 960px;
+    padding: 1em 0;
+    margin: 0 auto;
+}
+
+.half-width {
+    width: 400px;
+    padding: 1em 0;
+    margin: 0 auto;
+}
+
+.l-full-width {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #34BB99;
+    -webkit-transition: ease-in-out .3s;
+    -moz-transition: ease-in-out .3s;
+    -ms-transition: ease-in-out .3s;
+    -o-transition: ease-in-out .3s;
+    transition: ease-in-out .3s;
+
+    &:hover {
+        color: #A3D9B9;
+    }
+}
+
+.nav {
+    margin: 0 auto;
+    text-align: center;
+    ul {
+        padding: 0;
+        li {
+            display: inline-block;
+            width: 80px;
+            text-align: center;
+        }
+    }
+}
+
+.center {
+    text-align: center;
+}
+
+.divider {
+    // width: 100%;
+    width: 30px;
+    padding: 30px 0 0 0;
+    border-top: 1px solid #999;
+    margin: 30px auto 0 auto;
+}
+
+.social {
+    margin: 0 auto 1em;
+    text-align: center;
+    .fa {
+        margin: 0 .5em;
+        font-size: 2em;
+    }
+}
+
+body {
+    vertical-align: middle;
+    margin: 0;
+    font-family: 'Alegreya', serif;
+    font-size: 1em;
+    line-height: 1.5em;
+    //color: #999999;
+    color: #848484;
+
+    .intro {
+        //background: url("/../assets/stardust.png") center;
+        em {
+            display: block;
+            font-style: normal;
+        }
+        h1 {
+            text-align: center;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-weight: 300;
+            font-size: 5em;
+            line-height: 1.5em;
+            //color: #A3D9B9;
+            color: #34BB99;
+            margin: .2em auto;
+        }
+    }
+}

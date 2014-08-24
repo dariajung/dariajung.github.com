@@ -1,53 +1,42 @@
-<!DOCTYPE html>
-<html lang='en' ng-app="splashApp">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
-        <meta property="og:title" content="Daria Jung">
-        <title ng-controller="titleController">Daria Jung - {{ pageTitle }}</title>
+<!DOCTYPE HTML>
 
-        <!-- Favicon -->
-        <link rel="shortcut icon" href="favicon.png">
+<head>
+    <title>Daria Jung</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, minimal-ui">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
 
-        <!-- CSS -->
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-
-        <!-- Libraries -->
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.min.js"></script>
-
-        <!-- Javascript -->
-        <script src="js/home.js"></script>
-        <script src="js/services.js"></script>
-
-        <!-- Font -->
-        <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-    </head>
-    <body ng-controller="splashController" ng-cloak>
-
-        <!-- header + nav -->
-        <div class="navigation clearfix">
-            <div class="name"><a href="#home">Daria Jung</a></div>
-            <div class="mobile-nav" ng-click="toggleMobile()">
-                <ul ng-hide="mobileNavCollapsed" ng-animate="'fade'">
-                    <li><a href="http://blog.dariajung.com">Blog</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
+<html>
+<body>
+    <div class="l-full-width intro">
+        <div class="half-width">
+            <h1><a href="/">Daria Jung<a/></h1>
+            <div class="nav">
+                <ul>
+                    <a href="/"><li><strong>Home</strong></li></a>
+                    <a href="http://blog.dariajung.com"><li>Blog <i class="fa fa-external-link"></i></li></a>
+                    <a href="/projects.html"><li>Projects</li></a>
+                    <a href="/chronology.html"><li>Chronology</li></a>
                 </ul>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="http://blog.dariajung.com">Blog</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+
+            <div class="divider"></div>
+            <p>Nice of you to drop by.</p>
+            <p>I write code, sweat through some vinyasa flows, live in New York City, and fancy myself a perpetual learner.</p>
+            <p>I have one cat, Kitkat, whom I dote on, and a lovely boyfriend, <a target="_blank" href="http://zencephalon.com/">Matt</a>.</p>
         </div>
-        
-        <!-- Angular Template Injection -->
-        <div id="injected-content">
-            <div ng-view ng-animate="'fade'"></div>
+
+        <div class="social half-width">
+            <a target="_blank" href="http://github.com/dariajung"><i class="fa fa-github"></i></a>
+            <a target="_blank" href="http://instagram.com/dariajung"><i class="fa fa-instagram"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/pub/daria-jung/58/4ab/28b"><i class="fa fa-linkedin"></i></a>
+            <a target="_blank" href="https://twitter.com/djj2115"><i class="fa fa-twitter"></i></a>
+            <a target="_blank" href="mailto:daria@dariajung.com"><i class="fa fa-paper-plane-o"></i></a>
         </div>
-    </body>
+    </div>
+
+</body>
 </html>

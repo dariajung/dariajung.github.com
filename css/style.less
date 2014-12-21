@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Alegreya);
+@import url(http://fonts.googleapis.com/css?family=Josefin+Slab);
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400);
 
 .fa-external-link {
@@ -41,6 +41,10 @@
 
 ul {
     padding: 1em;
+
+    li {
+        margin-bottom: 0.5em;
+    }
 }
 
 .l-full-width {
@@ -50,6 +54,7 @@ ul {
 a {
     text-decoration: none;
     color: #34BB99;
+    font-weight: 400;
     -webkit-transition: ease-in-out .3s;
     -moz-transition: ease-in-out .3s;
     -ms-transition: ease-in-out .3s;
@@ -63,12 +68,13 @@ a {
 
 .nav {
     margin: 0 auto;
-    text-align: center;
+    //text-align: center;
+    font-size: 1em;
     ul {
         padding: 0;
         li {
             display: inline-block;
-            width: 80px;
+            width: 95px;
             text-align: center;
 
             @media (max-width: 401px) {
@@ -107,8 +113,9 @@ a {
 body {
     vertical-align: middle;
     margin: 0;
-    font-family: 'Alegreya', serif;
-    font-size: 1em;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
     line-height: 1.5em;
     color: #848484;
 
@@ -119,7 +126,7 @@ body {
         }
         h1 {
             text-align: center;
-            font-family: 'Source Sans Pro', sans-serif;
+            font-family: 'Josefin Slab', serif;
             font-weight: 300;
             font-size: 5em;
             line-height: 1.5em;

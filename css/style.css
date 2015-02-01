@@ -1,5 +1,4 @@
 @import url(http://fonts.googleapis.com/css?family=Josefin+Slab);
-
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400);
 .fa-external-link {
   vertical-align: middle;
@@ -39,6 +38,7 @@
 }
 ul {
   padding: 1em;
+  list-style-type: none;
 }
 ul li {
   margin-bottom: 0.5em;
@@ -48,7 +48,7 @@ ul li {
 }
 a {
   text-decoration: none;
-  color: #34BB99;
+  color: #0099CC;
   font-weight: 400;
   -webkit-transition: ease-in-out 0.3s;
   -moz-transition: ease-in-out 0.3s;
@@ -57,7 +57,7 @@ a {
   transition: ease-in-out 0.3s;
 }
 a:hover {
-  color: #A3D9B9;
+  color: #66CCFF;
 }
 .nav {
   margin: 0 auto;
@@ -103,10 +103,10 @@ body {
   vertical-align: middle;
   margin: 0;
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 1.1em;
+  font-size: 1em;
   font-weight: 300;
   line-height: 1.5em;
-  color: #848484;
+  color: #0099CC;
 }
 body .intro em {
   display: block;

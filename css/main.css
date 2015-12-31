@@ -1147,3 +1147,9 @@ pre {
 		margin: 2em 0;
 	}
 }
+
+@media screen and (max-width: 23em) {
+	#contact nav {
+	    width: 50%;
+	}
+}

@@ -1,0 +1,146 @@
+@import url(https://fonts.googleapis.com/css?family=Inconsolata);
+@import url(https://fonts.googleapis.com/css?family=EB+Garamond);
+
+
+body {
+	font-family: 'EB Garamond', serif;
+
+	margin-top: 2em;
+	margin-bottom: 2em;
+
+	.footer {
+		margin-top: 2em;
+		margin-bottom: 5em;
+	}
+
+	.image {
+		width: 100%;
+		margin-bottom: 2em;
+	}
+
+	.column-lg {
+		margin-top: 1em;
+		margin-bottom: 1em;
+		margin-left: auto;
+		margin-right: auto;
+		width: 960px;
+	}
+
+	ul {
+		margin-top: 2em;
+		font-size: 1.2em;
+		margin-left: 4em;
+    	list-style: none;
+
+    	li {
+    		margin: .5em;
+    	}
+	}	
+
+	.button {
+		margin: 0 auto;
+		padding: 1em;
+		background-color: #5bc0de;
+		color: #fff;
+		width: 150px;
+		border-radius: 5px;
+		-webkit-transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+		cursor: pointer;
+
+		&:hover {
+			background-color: #47ADCC;
+
+		}
+	}
+
+	#canvas, #canvas_custom, #canvas_custom_2 {
+		margin: 2em;
+	}
+
+	.introduction, .rules, .game, .patterns {
+		margin-top: 2em;
+		margin-bottom: 5em;
+	}
+
+	a {
+		color: #5bc0de;
+		text-decoration: none;
+		-webkit-transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+		cursor: pointer;
+
+		&:hover {
+			color: #47ADCC;
+
+		}
+	}
+
+	p {
+		font-size: 1.3em;
+		line-height: 1.5em;
+	}
+
+	hr {
+		color: #616060;
+		width: 200px;
+		margin: 2em auto;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		font-family: 'Inconsolata', sans-serif;
+		margin-bottom: 1.5em;
+		line-height: 1.5em;
+		color: #5bc0de;
+		letter-spacing: .1em;
+	}
+
+	h1 {
+		font-size: 3em;
+	}
+
+	.center {
+		text-align: center;
+	}
+
+	.divider {
+		margin-top: 1em;
+		margin-bottom: 5em;
+		background-image: url('../../assets/stardust.png');
+		height: 350px;
+		position: relative;
+		width: 100%;
+
+		p {
+			color: #fff;
+		}
+
+		.quote {
+			max-width: 960px;
+			position: absolute;
+			top: 30%;
+			left: 20%;
+			font-size: 2em;
+			text-shadow: 3px 3px 3px #616060;
+		}
+
+		blockquote {
+			color: #fff;
+		}
+
+		q:before,
+		blockquote:before {
+		    content: '"';
+		    color: #fff;
+		}
+		q:after,
+		blockquote:after {
+		    content: '"';
+		    color: #fff;
+		}
+	}
+}

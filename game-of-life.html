@@ -1,0 +1,128 @@
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<title>Conway's Game of Life</title>
+	<link rel="stylesheet" type="text/css" href="css/life/lemonade.min.css">
+	<link rel="stylesheet" type="text/css" href="css/life/style.css">
+	<script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+
+	<link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
+</head>
+
+<body>
+
+	<div class='frame column-lg'>
+		<h1 class='center'>Conway's Game of Life</h1>
+		
+		<hr>
+
+		<div class='introduction'>
+			<h2>Introduction</h1>
+			<p>The Game of Life is a cellular automaton devised by British Mathematican <a href='https://en.wikipedia.org/wiki/John_Horton_Conway' target='_blank'>John H. Conway</a>. There are no players, and each subsequent evolution of the cells in the "game" is determined by the original configuration of the game. You are merely an observer in how the Game of Life evolves.</p>
+		</div>
+
+	</div>
+
+	<div class='divider'>
+		<div class='quote center'>
+			<blockquote>
+				People think that mathematics is complicated. Mathematics is the simple bit. It's the stuff we <i>can</i> understand. It's cats that are complicated.
+			</blockquote>
+			<p> &mdash; John Horton Conway</p>
+		</div>
+	</div>
+
+	<div class='frame column-lg'>
+
+
+		<div class='rules'>
+			<h2>Rules to the Game of Life</h1>
+			<p>The Game exists in a universe of a two-dimensional orthogonal grid of "cells," each of which is in one of two possible states: alive or dead. Every cell interacts with eight of its neighbors (top left, top, top right, immediate left, immediate right, bottom left, bottom, bottom right) in the following ways:</p>
+			<ul>
+				<li>1. Any live cell with fewer than two live neighbours dies, as if caused by under-population.</li>
+				<li>2. Any live cell with two or three live neighbours lives on to the next generation.</li>
+				<li>3. Any live cell with more than three live neighbours dies, as if by over-population. </li>
+				<li>4. Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.</li>
+			</ul>
+		</div>
+
+		<div class='game'>
+			<h2>The Game Itself</h2>
+			<p>The Game of Life with a randomized starting confiuration.</p>
+			
+			<div class='center'>
+				<canvas id="canvas" width="400" height="400" style="border:1px solid #000000;"></canvas>
+			</div>
+
+			<p class='generations main-gen center'>Generations: 0</p>
+
+			<div class="button start-button center" id='main-life-button'>
+				Start Game of Life
+			</div>
+
+			<hr></hr>
+
+			<p>Custom Configuration: <b>Corder Ship</b> found by Dean Hickerson in April 1991</p>
+
+			<div class='center'>
+				<canvas id="canvas_custom" width="65" height="65" style="border:1px solid #000000;"></canvas>
+			</div>
+
+			<p class='generations snd-gen center'>Generations: 0</p>
+			<div class="button center start-button" id='snd-life-button'>
+				Start Game of Life
+			</div>
+
+			<hr></hr>
+
+			<p>Custom Configuration: <b>Garden of Eden</b></p>
+			<br></br>
+			<p>A Garden of Eden configuration is one that has no parents and as such must occur in generation 0. It was known from the start that Gardens of Eden exist in Life because of a <a href="http://www.sciencedirect.com/science/article/pii/S1571066109003703" target="_blank">theorem by Edward Moore</a> that guarantees their existence in a wide class of cellular automata.</p>
+
+			<div class='center'>
+				<canvas id="canvas_custom_2" width="65" height="65" style="border:1px solid #000000;"></canvas>
+			</div>
+
+			<p class='generations third-gen center'>Generations: 0</p>
+			<div class="button center start-button" id='third-life-button'>
+				Start Game of Life
+			</div>
+
+			<hr></hr>
+
+		</div>
+
+
+		<div class='patterns'>
+			<h2>Common Patterns</h2>
+			<a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life#Examples_of_patterns" target="_blank"><img class="image" src="assets/common_patterns.png"/></a>
+			<p>There are hundreds of patterns found, and Life enthusiasts keep a record of shapes found on sites such as this <a href="http://www.bitstorm.org/gameoflife/lexicon/" target="_blank">one</a>.</p>
+		</div>
+
+		<div class='why'>
+			<h2>Why?</h2>
+			<p>The impetus for the Game of Life was due to a problem presented by John von Neumann in the 1940s. von Neumann tried to find a hypothetical machine that could build copies of itself (von Neumann celluar automoton / <a href="http://cba.mit.edu/events/03.11.ASE/docs/VonNeumann.pdf" target="_blank">theory of self-reproducing automata</a>). The Game of Life was Conway's attempt at simplifying von Neumann's ideas.</p>
+			<br></br>
+			<p>"He choose the rules carefully after trying many other possibilities, some of which caused the cells to die too fast and others which caused too many cells to be born. Life balances these tendencies, making it hard to tell whether a pattern will die out completely, form a stable population, or grow forever." [<a href="http://www.math.com/students/wonders/life/life.html" target="_blank">source</a>]</p>
+			<br></br>
+			<p>The Game of Life can get quite complex; logic gates of AND, OR, and NOT can be programmed inside the Game of Life. A computer can be built inside the Game of Life universe given the correct starting configuration. Gliders and ship shapes can be used as electric signals to transfer information. There are examples of computers that have been built inside Life, such as a computer that can output prime numbers. John von Neumann showed that "a cellular automaton that could contain general self-replicating machines was universal" (Moravec, <i>Mind Children</i>, p.150).
+			</p>
+			<br></br>
+			<p>Game of Life is a Turing Complete language. In computability theory, a system of data-manipulation rules (such as a computer's instruction set, a programming language, or a cellular automaton) is said to be Turing complete or computationally universal if it can be used to simulate any single-taped Turing machine.</p>
+		</div>
+
+		<hr></hr>
+
+	</div>
+
+	<div class='column-lg center footer'>
+		Made with &#9829; by <a href='http://dariajung.com' target='_blank'>Daria</a> for Columbia University's <a href="http://www.columbia.edu/cu/bulletin/uwb/subj/RELI/W4015-20161-001/" target="_blank">Reincarnation &amp; Technology course</a>
+	</div>
+
+</body>
+		
+
+
+<script src="js/life.js"></script>

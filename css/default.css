@@ -35,7 +35,7 @@ a:hover {
 
 .container {
 	position: relative;
-	margin-top: 15em;
+	margin-top: 5em;
 }
 
 .container > header,
@@ -44,6 +44,10 @@ a:hover {
 	max-width: 69em;
 	margin: 0 auto;
 	padding: 2.875em 1.875em 1.875em;
+}
+
+.container > div > h1 {
+	font-size: 5em;
 }
 
 .container > header h1 {
